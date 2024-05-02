@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DuolingoApp</string>
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="lingo_simple_string">Lingo Simple</string>
+
+    <string name="let_s_get_this_party_started__string">Lets get this party started!</string>
+    <string name="what_would_you_like_to_learn">What would you like to learn?</string>
+    <string name="hi_there__i_m_foe_string">Hi there! Im Foe</string>
+    <string name="get_started_string">GET STARTED</string>
+    <string name="i_already_have_an_account_string">I ALREADY  HAVE AN ACCOUNT</string>
+    <string name="the_free__fun_and_effective_way_to_learn_a_language_string">The free, fun and effective way to learn a language</string>
+    <string name="how_did_you_hear_about_simple_lingo__string">How did you hear about
+        Simple Lingo?</string>
+    <string name="how_much_English_do_you_know">How much English do you
+        know?</string>
+    <string name="What_your_daily_learning_goal">What\'s your daily learning goal?</string>
+    <string name="yay__fun_is_my_specialty__may_you_enjoy_it_string">Yay! Fun is my specialty!May you enjoy it</string>
+    <string name="_61_400__stress_free_interactive_exercises_string">61,400+ stress-free interactive exercises</string>
+    <string name="_6_700__practical_words_and_phrases_string">6,700+ practical words and phrases</string>
+    <string name="smart_reminders__fun_challenges_and_more_string">Smart reminders, fun challenges and more</string>
+    <string name="converse_with_confidence_string">Converse with confidence</string>
+    <string name="build_a_large_vocabulary_string">Build a large vocabulary</string>
+    <string name="build_a_large_vocabulary_ek1_string">Build a large vocabulary</string>
+    <string name="app_description">Language Learning Application</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="default_web_client_id">1089218875346-lbrsumok9ld70srai0hj5g3snrgc4pri.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">297560363359483</string>
+    <string name="fb_login_protocol_scheme">fb297560363359483</string>
+    <string name="facebook_client_token">EAAEOoSvB3PsBO62mvv9sFsOJ2ZCSlqttTl75tCZB6NXRVzeRI8XePSWyjH0SDOrHs1A5ZCOKTPWQopC6Bm37DTbYwZAnP9SZBAEFWtGvPfuAj5sfvs99kwN5k6oTAzkWsCfYLerQ5HnCHNaDwXU5tH83xFzZCE5bBS5DdJpATaKdHtwpOsetVKUZBRBnLETZApskfqMdpIh7IJblRDR1kOYE7dfgUZAagn0ZCrAJJRfYzSgiw1TzZCEZAB5YBCTOf26I5O4ZD</string>
+
+</resources>

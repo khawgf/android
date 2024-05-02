@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+        android:name=".ads.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31" >
+        <activity
+            android:name=".thongbao.NotificationActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".network" />
+        <service
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".thongbao.NotificationReceiver" />
+
+        <activity
+            android:name=".ads.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tudien.Recognize_text"
+            android:exported="false" />
+        <activity
+            android:name=".hoctuvung.VocabularyTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taikhoan.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LessonCompletionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tudien.DictionaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".premium.PremiumActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tracnghiem.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sapxepcau.ArrangeSentencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".luyennghe.ListeningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dienkhuyet.FillBlanksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hoctuvung.VocabularyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taikhoan.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bocauhoi.QuestionListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taikhoan.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taikhoan.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".xephang.RankingActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".taikhoan.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

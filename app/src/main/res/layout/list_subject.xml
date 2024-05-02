@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnListCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hapticFeedbackEnabled="false"
+        android:text="  1000 TỪ CƠ BẢN"
+        android:elevation="8dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:drawableStart="@drawable/icon_bookshelf"
+        android:drawableEnd="@drawable/icon_down"
+        android:gravity="start|center_vertical"
+        android:textFontWeight="600"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFC107">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bird"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MỞ TOÀN BỘ KHÓA HỌC"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnUnlockClass"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/custom_radius_white"
+            android:text="MỞ NGAY"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingHorizontal="25dp"
+            android:textColor="#FF9800"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListSubject"
+        android:layout_below="@id/btnListCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationZ="5dp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        >
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_house"
+            android:text="Trang chủ"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorButton"
+            android:background="@color/white"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnListCourse_Subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/icon_education"
+            android:text="Học từ vựng"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:translationZ="10dp" />
+
+        <Button
+            android:id="@+id/btnSearchDictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_search"
+            android:text="Tra cứu"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorButton"
+            android:background="@color/white"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

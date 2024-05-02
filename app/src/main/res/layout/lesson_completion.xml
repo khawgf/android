@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp"
+    >
+
+    <ImageView android:id="@+id/imgLessonCompletion"
+        android:src="@drawable/lesson_completion"
+        android:contentDescription="lesson_completion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        />
+
+    <TextView
+        android:id="@+id/txtFinalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lesson Completion!"
+        android:textSize="28dp"
+        android:textColor="@color/_bg__android_large___2_ek2_color"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/lesson_completion1"
+            android:src="@drawable/lesson_completion1"
+            android:contentDescription="lesson_completion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtFinalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="60dp"
+            android:cursorVisible="true"
+            android:text="14"
+            android:textColor="#C4FFC107"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp" />
+
+        <ImageView
+            android:id="@+id/lesson_completion2"
+            android:src="@drawable/lesson_completion2"
+            android:contentDescription="lesson_completion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lesson_completion1"
+            />
+
+        <TextView
+            android:id="@+id/txtTime_FinishFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="58dp"
+            android:cursorVisible="true"
+            android:text="3:18"
+            android:textColor="#AB2196F3"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lesson_completion2"
+            android:contentDescription="lesson_completion3"
+            android:src="@drawable/lesson_completion3" />
+
+        <TextView
+            android:id="@+id/txtPerfect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="58dp"
+            android:cursorVisible="true"
+            android:text="100%"
+            android:textColor="#BA4CAF50"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnReturn_FinishFB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_getstarted"
+        android:backgroundTint="@color/rectangle_6_color"
+        android:text="RETURN"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        />
+
+</LinearLayout>

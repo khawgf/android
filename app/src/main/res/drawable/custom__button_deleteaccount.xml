@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:paddingLeft="10dp"
+        android:textColorHint="@color/textColorHint"
+        android:layout_gravity="center"
+        android:textFontWeight="600"
+        android:color="#F81010"
+        tools:targetApi="s" />
+    <corners android:radius="30dp"/>
+    <stroke android:width="2dp"
+        android:color="#F81010"
+        tools:targetApi="s" />
+</shape>

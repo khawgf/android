@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="15dp"
+    android:paddingBottom="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtBack_Lis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_back_24" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_Lis"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/custom_progress"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTime_Lis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_timer"
+        android:drawablePadding="10dp"
+        android:text="30:00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:drawableTint="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtQuestCount_Lis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Question: 1/x"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_question"
+            android:drawablePadding="10dp"
+            app:drawableTint="#F44336"
+            />
+
+
+        <TextView
+            android:id="@+id/txtScore_Lis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Score: 0"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="end"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btnLoudspeaker_Lis"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loudspeaker"
+            android:drawableStart="@drawable/icons8_loudspeaker_32"
+            android:paddingLeft="12dp"
+            />
+
+        <SeekBar
+            android:id="@+id/seekbar_Lis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="0" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_Lis"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cloud"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radiochoices_Lis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="center"
+                >
+
+                <RadioButton
+                    android:id="@+id/rdOption1_Lis"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_radius_white"
+                    android:button="@null"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:translationZ="1dp" />
+
+                <RadioButton
+                    android:id="@+id/rdOption2_Lis"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/custom_radius_white"
+                    android:text="B"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:translationZ="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="30dp"
+                >
+                <RadioButton
+                    android:id="@+id/rdOption3_Lis"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/custom_radius_white"
+                    android:text="C"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:translationZ="1dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rdOption4_Lis"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/custom_radius_white"
+                    android:text="D"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:translationZ="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@null"
+                    />
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue_Lis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_getstarted"
+        android:backgroundTint="#E6E4EA"
+        android:text="CONTINUE"
+        android:textColor="#BAB4B4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+</LinearLayout>

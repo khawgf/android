@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingHorizontal="10dp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingVertical="15dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BFBDBD"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edEmail_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Email"
+        android:drawableStart="@drawable/icon_gmail"
+        android:drawablePadding="16dp"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/textColorHint"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/edPassword_SignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/icon_password"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textColorHint="@color/textColorHint"/>
+
+        <ImageButton
+            android:id="@+id/btnShowHidePassword_SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_visible_off"
+            android:contentDescription="Show/Hide Password"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/custom_button_getstarted"
+        android:backgroundTint="#E6E4EA"
+        android:textColor="#BAB4B4"
+        android:cursorVisible="true"
+        >
+        <requestFocus/>
+    </Button>
+
+    <TextView
+        android:id="@+id/txtForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORGET PASSWORD"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnSignInWithGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_radius_white"
+        android:cursorVisible="true"
+        android:drawableStart="@drawable/icon_google"
+        android:elevation="8dp"
+        android:gravity="start|center_vertical"
+        android:hapticFeedbackEnabled="false"
+        android:paddingHorizontal="85dp"
+        android:paddingVertical="15dp"
+        android:stateListAnimator="@null"
+        android:text="     SIGN IN WITH GOOGLE"
+        android:textFontWeight="600" />
+
+    <Button
+        android:id="@+id/btnSignInWithFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_radius_white"
+        android:drawableStart="@drawable/icon_facebook"
+        android:elevation="8dp"
+        android:gravity="start|center_vertical"
+        android:hapticFeedbackEnabled="false"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="15dp"
+        android:stateListAnimator="@null"
+        android:text="     SIGN IN WITH FACEBOOK"
+        android:layout_marginTop="10dp"
+        android:textFontWeight="600"
+        android:layout_gravity="center"
+        android:cursorVisible="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register now"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

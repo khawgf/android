@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_bg__android_large___2_ek2_shape"
+    android:orientation="vertical">
+
+    <ImageView android:id="@+id/logo"
+        android:src="@drawable/image_2"
+        android:contentDescription="logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textColor="@color/lingo_simple_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lingo_simple_string"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar_LaunchScreen"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAppName"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:padding="20dp"
+        android:max="100"
+        android:progress="0"
+        />
+
+    <include
+        android:id="@+id/signInLayout"
+        layout="@layout/sign_in"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </RelativeLayout>
+

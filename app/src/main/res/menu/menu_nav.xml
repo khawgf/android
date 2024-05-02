@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_main"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Cài đặt" />
+    </group>
+
+    <item android:title="Thông báo">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/notification"
+                    android:icon="@drawable/baseline_alarm_24"
+                    android:title="Nhắc nhở học tập" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Tra cứu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Từ điển"
+                    android:id="@+id/Tudien"
+                    android:icon="@drawable/baseline_auto_stories_24"/>
+                <item android:title="Quét - dịch ảnh"
+                    android:id="@+id/QuetDichAnh"
+                    android:icon="@drawable/baseline_backup_24"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Tài khoản">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Thông tin tài khoản"
+                    android:icon="@drawable/ic_person"
+                    android:id="@+id/ThongTinTaiKhoan"
+                    ></item>
+            </group>
+        </menu>
+    </item>
+</menu>

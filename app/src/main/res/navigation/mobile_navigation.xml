@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.duolingoapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/setting"
+        android:label="Cài đặt"
+        android:name="com.example.duolingoapp.taikhoan.SettingActivity"
+        tools:layout="@layout/setting"
+        />
+
+    <activity
+        android:id="@+id/notification"
+        android:label="Nhắc nhở học tập"
+        android:name="com.example.duolingoapp.thongbao.NotificationActivity"
+        tools:layout="@layout/activity_notification"
+        />
+
+    <activity
+        android:id="@+id/Tudien"
+        android:label="Học từ vựng"
+        android:name="com.example.duolingoapp.tudien.DictionaryActivity"
+        tools:layout="@layout/dictionary"
+        />
+
+    <activity
+        android:id="@+id/QuetDichAnh"
+        android:label="Quét-dịch ảnh"
+        android:name="com.example.duolingoapp.tudien.Recognize_text"
+        tools:layout="@layout/activity_recognize_text"
+        />
+
+    <activity
+        android:id="@+id/ThongTinTaiKhoan"
+        android:label="Thông tin tài khoản"
+        android:name="com.example.duolingoapp.taikhoan.ProfileActivity"
+        tools:layout="@layout/profile"
+        />
+
+</navigation>

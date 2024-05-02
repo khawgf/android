@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_back_24" />
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:progress="70"
+            android:progressDrawable="@drawable/custom_progress"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:contentDescription="image_1"
+            android:src="@drawable/image_1" />
+
+        <ImageView android:id="@+id/rectangle_9"
+            android:src="@drawable/rectangle_9"
+            android:contentDescription="rectangle_9"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/how_did_you_hear_about_simple_lingo_"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignStart="@id/rectangle_9"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="I'll remind you to practice so it becomes a habit!"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:id="@+id/popupAllow"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_radius_grey"
+            android:gravity="center_horizontal"
+            android:paddingVertical="30dp"
+            android:text="Lingo Simple Would Like to Send You Notification"
+            android:textColor="#706E6E"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Don't Allow"
+            android:layout_alignBottom="@id/popupAllow"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_grey"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Allow"
+            android:layout_alignBottom="@id/popupAllow"
+            android:layout_alignEnd="@id/popupAllow"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_grey"
+            android:textColor="#1DA4E3"
+            android:textSize="16dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_getstarted"
+        android:backgroundTint="@color/rectangle_6_color"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        />
+</LinearLayout>

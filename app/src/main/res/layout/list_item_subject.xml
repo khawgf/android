@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:id="@+id/cardView"
+    >
+
+    <LinearLayout
+        android:id="@+id/linerLayoutItem"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_radius_white"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivSubjectImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_user"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/textColorButton"
+                />
+            <TextView
+                android:id="@+id/txtUnlockClass_ItemSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unclock_class"
+                android:layout_alignBottom="@id/ivSubjectImage"
+                android:layout_alignEnd="@id/ivSubjectImage"
+                android:translationZ="1dp"
+                />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            >
+            <TextView
+                android:id="@+id/txtSubjectName_ENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Economícs"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/txtSubjectName_VIE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Kinh tế học"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
